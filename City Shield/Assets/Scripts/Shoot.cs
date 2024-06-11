@@ -9,7 +9,7 @@ public class Shoot : MonoBehaviour
     [SerializeField]
     private GameObject bulletPoint;
     [SerializeField]
-    private float bulletSpeed = 600;
+    private float bulletSpeed = 3000;
 
     void Start()
     {
@@ -31,4 +31,6 @@ public class Shoot : MonoBehaviour
         bullet.GetComponent<Rigidbody>().AddForce(transform.forward * bulletSpeed);
         Destroy(bullet, 3);
     }
+
+
 }
